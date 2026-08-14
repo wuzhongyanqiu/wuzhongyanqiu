@@ -1,6 +1,6 @@
 <div align="center">
 
-![Model x Harness co-evolution](./assets/model-harness-flywheel.svg)
+![Model x Harness co-evolution](./assets/model-harness-flywheel.png)
 
 # Wuzhong Yanqiu
 
