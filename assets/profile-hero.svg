@@ -1,86 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="560" viewBox="0 0 1600 560" role="img" aria-labelledby="heroTitle heroDesc">
-  <title id="heroTitle">Intelligence is a system</title>
-  <desc id="heroDesc">Independent mind, agentic futures. A dark technical panel with a precise grid. A model feeds a runtime, the runtime acts in an environment, and checkable feedback returns to the system.</desc>
-
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="520" viewBox="0 0 1600 520" role="img" aria-labelledby="title desc">
+  <title id="title">The next frontier is taste — a working thesis</title>
+  <desc id="desc">Aesthetic intelligence and generalization. Diverse task experience grounds competence; aesthetic judgment may transfer across tasks. Flowing lines converge into a coherent form, suggesting the relationship between experience, judgment, and transfer.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0A1219"/>
-      <stop offset="0.55" stop-color="#070C11"/>
-      <stop offset="1" stop-color="#05080C"/>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#10171d"/>
+      <stop offset="1" stop-color="#080b10"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0.2" cy="0.3" r="0.8">
-      <stop offset="0" stop-color="#123039" stop-opacity="0.5"/>
-      <stop offset="0.62" stop-color="#123039" stop-opacity="0.08"/>
-      <stop offset="1" stop-color="#123039" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="minor" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M40 0H0V40" fill="none" stroke="#1B2934" stroke-width="1"/>
+    <linearGradient id="ribbon" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#e2ded2"/>
+      <stop offset="0.5" stop-color="#83d3c8"/>
+      <stop offset="1" stop-color="#8a91b7"/>
+    </linearGradient>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="#26343d" stroke-width="1" opacity="0.32"/>
     </pattern>
-    <pattern id="major" width="200" height="200" patternUnits="userSpaceOnUse">
-      <path d="M200 0H0V200" fill="none" stroke="#243542" stroke-width="1"/>
-    </pattern>
-    <marker id="arrowTeal" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto">
-      <path d="M1 1L10 6L1 11" fill="none" stroke="#3EC8B4" stroke-width="1.6"/>
-    </marker>
-    <marker id="arrowCobalt" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto">
-      <path d="M1 1L10 6L1 11" fill="none" stroke="#7E93F5" stroke-width="1.6"/>
-    </marker>
   </defs>
-
-  <rect width="1600" height="560" rx="14" fill="url(#bg)"/>
-  <rect width="1600" height="560" rx="14" fill="url(#minor)"/>
-  <rect width="1600" height="560" rx="14" fill="url(#major)"/>
-  <rect width="1600" height="560" rx="14" fill="url(#glow)"/>
-  <rect x="0.5" y="0.5" width="1599" height="559" rx="14" fill="none" stroke="#1D2A35"/>
-
-  <g fill="#22303D">
-    <rect x="72" y="548" width="1" height="6"/>
-    <rect x="272" y="548" width="1" height="6"/>
-    <rect x="472" y="548" width="1" height="6"/>
-    <rect x="672" y="548" width="1" height="6"/>
-    <rect x="872" y="548" width="1" height="6"/>
-    <rect x="1072" y="548" width="1" height="6"/>
-    <rect x="1272" y="548" width="1" height="6"/>
-    <rect x="1472" y="548" width="1" height="6"/>
-  </g>
-
-  <g font-family="'Helvetica Neue', Helvetica, Arial, 'Segoe UI', sans-serif">
-    <text x="72" y="58" font-size="24" font-weight="600" letter-spacing="3.4" fill="#8FA5B5">WUZHONG YANQIU</text>
-    <text x="1528" y="58" font-size="24" font-weight="600" letter-spacing="3.4" fill="#647B8D" text-anchor="end">AGENTIC FUTURES</text>
-
-    <text x="70" y="196" font-size="94" font-weight="700" letter-spacing="-2" fill="#F4F7F9">Intelligence</text>
-    <text x="70" y="296" font-size="94" font-weight="700" letter-spacing="-2" fill="#F4F7F9">is a <tspan fill="#3EC8B4">system</tspan>.</text>
-
-    <rect x="72" y="344" width="912" height="1" fill="#22303D"/>
-
-    <text x="72" y="390" font-size="26" fill="#93A7B5">What a model can do is set by the system around it:</text>
-    <text x="72" y="426" font-size="26" fill="#93A7B5">context, tools, permissions, and feedback one can check.</text>
-
-    <text x="72" y="506" font-size="24" letter-spacing="0.4" fill="#6D8494">github.com/wuzhongyanqiu</text>
-
-    <g stroke="#253544" fill="none">
-      <path d="M1128 204V240" stroke="#3EC8B4" stroke-width="1.6" marker-end="url(#arrowTeal)"/>
-      <path d="M1128 340V376" stroke="#3EC8B4" stroke-width="1.6" marker-end="url(#arrowTeal)"/>
-      <path d="M1128 430H1100Q1088 430 1088 418V170Q1088 158 1100 158H1116" stroke="#7E93F5" stroke-width="1.4" stroke-dasharray="5 5" opacity="0.85" marker-end="url(#arrowCobalt)"/>
+  <rect width="1600" height="520" rx="14" fill="url(#bg)"/>
+  <rect width="1600" height="520" rx="14" fill="url(#grid)"/>
+  <rect x="0.5" y="0.5" width="1599" height="519" rx="14" fill="none" stroke="#28343c"/>
+  <g font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+    <text x="72" y="58" font-size="24" font-weight="600" letter-spacing="3" fill="#9caeb8">WUZHONG YANQIU</text>
+    <text x="1528" y="58" text-anchor="end" font-size="24" letter-spacing="3" fill="#9caeb8">AESTHETIC INTELLIGENCE</text>
+    <text x="72" y="125" font-size="23" letter-spacing="3" fill="#c8c1ab">A WORKING THESIS</text>
+    <text x="68" y="226" font-size="88" font-weight="700" letter-spacing="-2" fill="#f3f1e9">The next frontier</text>
+    <text x="68" y="326" font-size="98" font-weight="700" letter-spacing="-2" fill="#f3f1e9">is <tspan fill="#83d3c8">taste.</tspan></text>
+    <path d="M72 368H935" stroke="#334047"/>
+    <text x="72" y="411" font-size="28" fill="#b2bec4">Task diversity grounds competence.</text>
+    <text x="72" y="451" font-size="28" fill="#b2bec4">Could aesthetic judgment transfer across tasks?</text>
+    <g fill="none" stroke="url(#ribbon)" stroke-width="2.5">
+      <path d="M1020 183C1128 108 1204 345 1334 271S1448 142 1514 200" opacity="0.35"/>
+      <path d="M1020 216C1146 112 1190 357 1334 271S1445 158 1514 218" opacity="0.5"/>
+      <path d="M1020 249C1148 127 1204 355 1334 271S1453 176 1514 236" opacity="0.7"/>
+      <path d="M1020 282C1156 148 1198 347 1334 271S1456 196 1514 254"/>
+      <path d="M1020 315C1154 174 1213 344 1334 271S1458 216 1514 272" opacity="0.8"/>
+      <path d="M1020 348C1147 203 1222 336 1334 271S1455 236 1514 290" opacity="0.55"/>
+      <path d="M1020 381C1140 232 1235 327 1334 271S1450 256 1514 308" opacity="0.35"/>
     </g>
-    <text x="1084" y="300" font-size="24" letter-spacing="1" fill="#7E93F5" text-anchor="middle" transform="rotate(-90 1084 300)">feedback</text>
-
-    <rect x="1128" y="112" width="400" height="92" rx="8" fill="#0D1720" stroke="#23323F"/>
-    <rect x="1128" y="112" width="3" height="92" rx="1.5" fill="#3EC8B4"/>
-    <text x="1152" y="151" font-size="31" font-weight="600" letter-spacing="0.7" fill="#EAF1F5">MODEL</text>
-    <text x="1152" y="183" font-size="26" fill="#8297A6">latent capability</text>
-    <text x="1504" y="151" font-size="22" font-family="'SF Mono', Menlo, Consolas, monospace" fill="#4E6577" text-anchor="end">01</text>
-
-    <rect x="1128" y="248" width="400" height="92" rx="8" fill="#0D1720" stroke="#23323F"/>
-    <rect x="1128" y="248" width="3" height="92" rx="1.5" fill="#3EC8B4"/>
-    <text x="1152" y="287" font-size="31" font-weight="600" letter-spacing="0.7" fill="#EAF1F5">RUNTIME</text>
-    <text x="1152" y="319" font-size="26" fill="#8297A6">context · tools · control</text>
-    <text x="1504" y="287" font-size="22" font-family="'SF Mono', Menlo, Consolas, monospace" fill="#4E6577" text-anchor="end">02</text>
-
-    <rect x="1128" y="384" width="400" height="92" rx="8" fill="#0D1720" stroke="#23323F"/>
-    <rect x="1128" y="384" width="3" height="92" rx="1.5" fill="#3EC8B4"/>
-    <text x="1152" y="423" font-size="31" font-weight="600" letter-spacing="0.7" fill="#EAF1F5">ENVIRONMENT</text>
-    <text x="1152" y="455" font-size="26" fill="#8297A6">consequences, checked</text>
-    <text x="1504" y="423" font-size="22" font-family="'SF Mono', Menlo, Consolas, monospace" fill="#4E6577" text-anchor="end">03</text>
+    <circle cx="1334" cy="271" r="7" fill="#e2ded2"/>
+    <text x="1020" y="440" font-size="23" letter-spacing="1" fill="#8da2ad">EXPERIENCE</text>
+    <text x="1280" y="440" text-anchor="middle" font-size="23" letter-spacing="1" fill="#b7cfc8">JUDGMENT</text>
+    <text x="1514" y="440" text-anchor="end" font-size="23" letter-spacing="1" fill="#8da2ad">TRANSFER</text>
   </g>
 </svg>
