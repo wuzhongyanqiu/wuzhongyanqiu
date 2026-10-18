@@ -1,93 +1,56 @@
 <div align="center">
 
-![The agentic systems flywheel](./assets/agentic-systems-flywheel.jpg)
-
-# Wuzhong Yanqiu
-
-**Exploring the runtime and learning systems behind long-horizon agents.**
-
-![Agent Runtime](https://img.shields.io/badge/Agent-Runtime-18181B?style=flat-square)
-![Context Engineering](https://img.shields.io/badge/Context-Engineering-0E7490?style=flat-square)
-![Agentic RL](https://img.shields.io/badge/Agentic-RL-15803D?style=flat-square)
-![Verifiable Environments](https://img.shields.io/badge/Verifiable-Environments-C2410C?style=flat-square)
-![Long Horizon](https://img.shields.io/badge/Long--Horizon-Systems-7C3AED?style=flat-square)
+<img src="./assets/profile-hero.svg" width="100%" alt="Intelligence is a system. Wuzhong Yanqiu, agentic futures. Diagram: a model supplies latent capability, a runtime supplies context, tools and control, an environment supplies consequences that can be checked, and feedback returns to the system.">
 
 </div>
 
-## The thesis
+## Independent mind · Agentic futures
 
-The next scaling loop for agents will not be model-only.
+比起模型排行榜上再高一点的分数，我更在意一个问题：智能真正被用起来时，究竟卡在哪一层。
 
-Intelligence in the real world is a property of the complete system: a **policy**
-that reasons, a **runtime** that controls context and action, and an **environment**
-that returns verifiable feedback. Improving any one layer changes what the other
-two can learn.
+> *The model is the premise. The system is the argument.*
 
-> **The checkpoint provides latent capability. The runtime turns it into behavior. Experience turns behavior into the next release.**
+### 01 智能的有效边界，由系统共同定义
 
-The release unit is shifting from a model checkpoint to an evolving system:
-policy weights, harness, tools, context strategy, verifiers, and evaluation packs.
+一个模型能做多少，取决于三层怎么咬合：**model** 给出潜在能力，**runtime** 决定这些能力能否被组织成动作，**environment** 决定动作能否被判定为有效。任一层薄弱，"看起来会"就会退回"实际上不会"。
 
-## Frontier map
+我把模型能力看作起点：把潜力兑现成稳定行为，还需要系统设计；现实反馈再反过来改变模型与系统的下一次迭代。
 
-| Direction | What matters |
-| --- | --- |
-| **Agent Runtime / Control Plane** | Execution loops, scoped tools, durable state, permissions, recovery, and intervention |
-| **Context Engineering** | Selection, compaction, memory views, context resets, skill retrieval, and attention budgets |
-| **Long-Horizon Reliability** | Checkpointing, resumability, failure attribution, handoffs, and completion evidence |
-| **Trajectory-Native Learning** | Rollouts, step-level signals, credit assignment, experience replay, and agentic RL |
-| **Verifiable Environments** | Executable feedback, process rewards, regression gates, and task-grounded evaluation |
-| **Harness Evolution** | Automatically testing and improving tools, middleware, memory, prompts, and runtime policy |
+### 02 Context 的组织方式，会成为能力边界
 
-## The experience flywheel
+任务跨度越长，需要维持的状态就越多。窗口更大，也不等于系统知道哪些信息值得保留、哪些证据已经过时。
 
-```text
-release the system
-    -> run real tasks
-        -> capture trajectories
-            -> attribute failures
-                -> verify outcomes
-                    -> update weights or harness
-                        -> release the next system
-```
+我更看重**选择、组织与遗忘**：什么进入上下文，什么被压缩，什么时候重新检索。Context engineering 的本质，是设计系统在每一步能够看见的世界。
 
-The most valuable artifact is no longer just the final answer. It is the full,
-auditable episode: state, action, tool result, reward, failure, recovery, and proof
-of completion.
+### 03 长程可靠性来自可验证，而不是来自更长
 
-## Working hypotheses
+任务一旦跨越数小时或数天，错误不再被最终答案吸收，而是沿途累积。
 
-```text
-System capability > checkpoint capability
-Context is a runtime resource, not a static prompt
-Production experience becomes training substrate
-Evaluation moves inside the execution loop
-The harness becomes a learnable policy surface
-```
+要让长任务成立，系统必须在中间给出可检验的证据，并在失败时指出是哪一层错了：模型判断、工具执行，还是环境反馈本身。从"回答得好"到"结果可复验"，才是 agent 从演示走向实际的分水岭。
 
-## Questions worth answering
+### 04 创作变便宜之后，判断变昂贵
 
-- What belongs in a model-specific runtime, and what should remain universal?
-- When should experience update model weights, and when should it evolve the harness?
-- How do we preserve state and coherence across hours, days, and context resets?
-- Which verifiers can turn ambiguous work into trustworthy learning signals?
-- Can an evolution control plane improve agents without losing observability or control?
+如果生成成本持续下降，供给就会更充裕；我的判断是，知道什么值得做、能分辨好坏、能把模糊愿望定义成可解问题，会变得更有价值。
 
-<details>
-<summary><strong>中文 / 核心判断</strong></summary>
+工具使用者与系统设计者的分界也在这里：前者优化眼前这一步，后者决定什么值得被优化。
 
-我关注的不只是某个模型或某个 Agent 产品，而是 **Model × Runtime × Environment** 组成的完整智能系统。
+## Bets · 未来 2–5 年，三个个人预测
 
-未来发布的基本单位不会只是一个模型 checkpoint，而会是一整套协同演化的系统：模型权重、Agent Runtime、上下文策略、工具与权限、长期状态、可验证环境以及评测包。模型提升能力上限，Runtime 把潜在能力兑现成可靠行为；真实任务产生的轨迹、失败归因和验证信号，再分别推动模型训练与 Harness 演化。
+> 以下是判断，不是结论；每条都写明了什么会推翻它。
 
-模型升级会让 Runtime 更轻、更强，Runtime 升级又会产生更高质量的经验与训练信号。两者交替加速，再由环境提供可验证的现实反馈，形成真正能够持续学习的 Experience Flywheel。这是我认为通向长程自主系统乃至 AGI 的关键路径。
+**01 Runtime 会成为与模型共同优化的学习对象。** 我预测，越来越多的改进会发生在上下文策略、记忆与工具编排上，并由任务反馈驱动。
 
-</details>
+- 观察信号：在固定模型与预算下，自动优化出的 harness 能在未见任务上持续超过人工配置。
+- 什么会推翻它：如果模型的长上下文与自我管理足够强，同一任务集上不同 runtime 的表现明显收敛，外部系统设计的价值就会下降。
 
----
+**02 验证能力会决定自主工作的边界。** 我预测，能否低成本确认结果、定位失败，会越来越影响哪些任务可以交给 agent 独立完成。
 
-<div align="center">
+- 观察信号：真实流程按任务的可验证程度开放自主权限，评估同时记录结果、恢复成本与人工接管率。
+- 什么会推翻它：如果缺乏外部验证的系统，也能长期维持同等可靠性与低接管率，这一判断就需要重估。
 
-`POLICY` &nbsp; x &nbsp; `RUNTIME` &nbsp; x &nbsp; `ENVIRONMENT` &nbsp; -> &nbsp; `EVOLUTION`
+**03 更多价值会移向问题定义与可信分发。** 当执行更易获得，我预测，"决定做什么"与"凭什么相信它"会获得更高的议价权。
 
-</div>
+- 观察信号：团队预算更多流向需求判断、评估标准、持续策展与可信渠道，产出数量的重要性下降。
+- 什么会推翻它：如果生成能力本身长期保持稀缺，或用户持续为产出数量而非筛选与信任付费，价值转移就不会如期发生。
+
+<sub>这些判断都愿意被证据修正。</sub>
