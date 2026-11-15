@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" fill="none">
+  <defs>
+    <linearGradient id="heroBg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#071316"/>
+      <stop offset="52%" stop-color="#0b2422"/>
+      <stop offset="100%" stop-color="#0f3b36"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.24" r="0.55">
+      <stop offset="0%" stop-color="#14b8a6" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#071316" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldLine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e5c687"/>
+      <stop offset="100%" stop-color="#5eead4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="360" rx="20" fill="url(#heroBg)"/>
+  <rect width="1200" height="360" rx="20" fill="url(#glow)"/>
+  <rect x="1" y="1" width="1198" height="358" rx="19" stroke="rgba(255,255,255,0.10)"/>
+
+  <!-- Subtle architectural grid -->
+  <g stroke="rgba(255,255,255,0.04)" stroke-width="1">
+    <line x1="80" y1="0" x2="80" y2="360"/>
+    <line x1="360" y1="0" x2="360" y2="360"/>
+    <line x1="640" y1="0" x2="640" y2="360"/>
+    <line x1="920" y1="0" x2="920" y2="360"/>
+    <line x1="0" y1="90" x2="1200" y2="90"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+  </g>
+
+  <!-- Orbital Super-Agent emblem on the right -->
+  <g transform="translate(970 180)">
+    <circle r="112" stroke="url(#goldLine)" stroke-opacity="0.32" stroke-width="1.2"/>
+    <circle r="86" stroke="#5eead4" stroke-opacity="0.25" stroke-width="1.2" stroke-dasharray="5 5"/>
+    <circle r="56" stroke="#e5c687" stroke-opacity="0.45" stroke-width="1.5"/>
+    <polygon points="0,-36 31,-18 31,18 0,36 -31,18 -31,-18" fill="rgba(20,184,166,0.14)" stroke="#5eead4" stroke-width="1.8"/>
+    <circle r="7" fill="#e5c687"/>
+    <circle cx="112" cy="0" r="4.5" fill="#5eead4"/>
+    <circle cx="-56" cy="-97" r="4" fill="#e5c687"/>
+  </g>
+
+  <!-- Eyebrow pill -->
+  <rect x="72" y="64" width="248" height="28" rx="14" fill="rgba(94,234,212,0.10)" stroke="rgba(94,234,212,0.32)"/>
+  <circle cx="90" cy="78" r="4" fill="#5eead4"/>
+  <text x="104" y="82.5" fill="#99f6e4" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" letter-spacing="1.4">SUPER-AGENT ARCHITECTURE</text>
+
+  <!-- Title & Subtitle -->
+  <text x="72" y="148" fill="#ffffff" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-size="46" font-weight="700" letter-spacing="-0.8">wuzhongyanqiu</text>
+  <text x="72" y="190" fill="#cbd5e1" font-family="Inter, PingFang SC, -apple-system, sans-serif" font-size="20" font-weight="400">
+    AI-Native Engineering · Multi-Harness Orchestration · Portable Research Stack
+  </text>
+
+  <!-- Four minimal pillar chips -->
+  <g font-family="Inter, PingFang SC, sans-serif" font-size="13" font-weight="500">
+    <rect x="72" y="238" width="166" height="36" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)"/>
+    <text x="90" y="261" fill="#e2e8f0">01 · Control Plane</text>
+
+    <rect x="252" y="238" width="178" height="36" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)"/>
+    <text x="270" y="261" fill="#e2e8f0">02 · Isolated Sandboxes</text>
+
+    <rect x="444" y="238" width="176" height="36" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)"/>
+    <text x="462" y="261" fill="#e2e8f0">03 · Skills &amp; Workflows</text>
+
+    <rect x="634" y="238" width="178" height="36" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)"/>
+    <text x="652" y="261" fill="#e2e8f0">04 · Fresh Bootstrap</text>
+  </g>
+</svg>

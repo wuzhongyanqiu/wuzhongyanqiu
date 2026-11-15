@@ -1,41 +1,50 @@
 <div align="center">
 
-<img src="./assets/profile-hero.svg" width="100%" alt="A working thesis: the next frontier is taste. Diverse task experience grounds competence; aesthetic judgment may open a new path to generalization.">
+<img src="./assets/superagent-hero.svg" width="100%" alt="wuzhongyanqiu · Super-Agent Architecture">
 
 </div>
 
-## Aesthetic intelligence · 审美与泛化
+<br/>
 
-我关注一个假说：**多样任务数据建立智能的能力底座，下一次值得期待的涌现，可能发生在审美。**
+## Super-Agent · 个人科研与 AI-Native 工程基座
 
-> *Task diversity grounds competence. Taste may unlock generalization.*
+> **Design Principle** — 把多模型 Harness、隔离沙箱、可复用 Skill、自动化工作流与实时运行态观测收口到一套**可迁移、零敏感泄漏、可一键复刻**的 Super-Agent 控制面。
 
-### 01 任务经验决定下限，下一步是形成判断
+---
 
-训练与 Agent 的能力下限，应当扎根于足够广泛的任务数据、真实交互与结果反馈。模型需要先学会理解约束、调用工具、完成任务，并从失败中修正。
+### 01 · 核心架构拼图
 
-在这个底座之上，我更关心另一种能力：当指令没有穷尽标准、答案不止一个时，系统能否主动辨别什么更好，并据此取舍。
+| 模块 | 仓库 | 定位与能力 |
+| :--- | :--- | :--- |
+| **Control Plane** | [`advanced-research-control`](https://github.com/wuzhongyanqiu/advanced-research-control) | 研究运维总控台：Git 同步调度、项目全景、调用统计（7d/30d/模型细分）、资源检索 API 与便携环境引导脚本 |
+| **Multi-Agent Sandbox** | [`DS-Bot`](https://github.com/wuzhongyanqiu/DS-Bot) | 基于 DeepSeek Harness 的多 Bot 协作与密码隔离实验空间，支持隔离 Bot 间群聊、受控工具授权与人设自治 |
+| **Creator & Media Kit** | [`open-creator-toolbox`](https://github.com/wuzhongyanqiu/open-creator-toolbox) · [`ai-video-kit`](https://github.com/wuzhongyanqiu/ai-video-kit) | 音视频抽帧/字幕提取、素材生图（Image 2.5）、3D 草模清理与宣发视频自动化管线 |
+| **Intelligence & Radar** | [`llm-landscape`](https://github.com/wuzhongyanqiu/llm-landscape) · [`dsh-ecosystem-dashboard`](https://github.com/wuzhongyanqiu/dsh-ecosystem-dashboard) | 模型能力雷达、Harness 生态观测与前沿研究追踪 |
 
-### 02 审美，是对整体质量的感知
+---
 
-我所说的审美，包含对**结构、简洁、比例、连贯与情境适切性**的判断：局部都成立，整体是否仍然失衡？信息已经充分，表达是否还在制造噪声？一个方案足够复杂，是否也足够必要？
+### 02 · 一键复刻环境（Fresh Machine Bootstrap）
 
-这种判断的价值，在于它有机会进入生成过程：系统能够察觉不协调，比较候选方案，知道该保留什么、删去什么，以及什么时候值得重做。
+在任意新机器上，只需拉取总控仓库即可同步公开基建、共享 Skill 与工作习惯（**自动隔离并跳过公司内部敏感仓库与密钥文件**）：
 
-### 03 真正值得期待的，是审美向其他任务迁移
+```bash
+git clone https://github.com/wuzhongyanqiu/advanced-research-control.git sync-controller
+cd sync-controller
+npm run bootstrap
+```
 
-我的猜想是，不同任务的优质解法，可能共享某些结构：用更少的冗余组织更多信息，让局部选择服从整体目标，在约束之间形成恰当的平衡。
+`npm run bootstrap` 会自动完成：
+1. 拉取并快进同步公开/个人常用仓库（`DS-Bot`、`open-creator-toolbox`、`llm-landscape`、`dsh-ecosystem-dashboard`、`ai-video-kit`）；
+2. 将共享 Skills 软链到 `~/.codex/skills` 与 `~/.claude/skills`；
+3. 从 `.env.example` 生成脱敏 `.env` 模板（绝不覆盖已有密钥）；
+4. 编译并启动本地控制面板（`http://127.0.0.1:4310`）。
 
-如果模型学到的是这些关系，审美判断就可能越过表面风格：从构图与叙事，迁移到**代码架构的清晰、推理表达的紧凑、研究问题的选择，以及 Agent 对目标与路径的取舍**。
+---
 
-这也是我理解的下一次涌现：系统在新的任务中，开始表现出没有被逐项写进指令的质量判断。
+### 03 · Aesthetic Intelligence · 审美与泛化
 
-## The bet · 我对下一阶段的判断
+我依然在持续验证一个研究直觉：**多样任务经验决定智能的下限，而审美判断（结构、比例、简洁与情境适切性）决定了系统能否跨任务主动取舍。**
 
-**任务训练让系统知道怎么做，审美能力可能让它更善于判断什么值得做、怎样做得更好。** 我期待的变化，是从完成指令，走向理解质量；从生成候选，走向主动选择与自我修正。
-
-这个假说需要跨任务证据：在控制训练数据量、算力与反馈预算后，审美或偏好训练的收益，应当能够迁移到**不共享表面风格的未见任务**，并体现在独立的任务指标上。
-
-如果提升只停留在视觉风格、评审者偏好或相似题型，它就还不能被称为通用能力的增长。审美也不能替代事实核验、逻辑与功能验证——值得研究的是它能否与这些能力协同，而非以美代真。
-
-<sub>这是我的研究兴趣与个人预测。真正的说服力，应来自能够被复现、也能够被推翻的结果。</sub>
+<div align="center">
+  <sub>Built for autonomous leverage · Keep secrets local, keep workflows portable.</sub>
+</div>
